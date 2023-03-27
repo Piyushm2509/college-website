@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<marquee><h1 style="color: rgb(8, 249, 136);">Welcome to Indian Institute of Information Technology,Kota(भारतीय सूचना प्रौद्योगिकी संस्थान कोटा)</h1></marquee>
+<marquee direction="right" 
+        behavior="alternate" 
+        style="border:rgb(222, 13, 245) 2px SOLID">
+        <h2 style="color: rgb(8,249,136);">ADMISSION OPEN FOR UG</h2>
+    </marquee>
+<title>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY,KOTA</title>
+<style>
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  float: left;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.blue{
+  color:blue;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.font{
+      font-family: 'Cooper Black',sans-serif;
+      font-size:150%;
+      color:blue;
+}
+.center {
+  display: block;
+  margin-left: auto;
+ margin-right: auto;
+  float: right;
+}
+a:link, a:visited {
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: yellow;
+}
+p {
+color:green;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  /* The image used */
+  background-image: url('https://c0.wallpaperflare.com/preview/2/930/375/graduation-academic-accomplish-air.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+
+tr:hover {background-color: pink;}
+
+h1 {
+ text-align: centre;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+
+.dropbtn {
+  background-color: blue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+#scroll-container {
+  border: 3px solid black;
+  border-radius: 5px;
+  height: 100px;
+  overflow: hidden;
+}
+
+#scroll-text {
+  height: 100%;
+  text-align: center;
+  
+  /* animation properties */
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -moz-animation: my-animation 5s linear infinite;
+  -webkit-animation: my-animation 5s linear infinite;
+  animation: my-animation 5s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateY(100%); }
+  to { -moz-transform: translateY(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<div class="dropdown">
+
+  <div class="dropdown-content">
+  <a href="https://twitter.com/iiitkotaoffice?lang=en"target="_blank">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAZlBMVEX///8AovUAn/UAmvQAnPQAnvX6/f+b0PrS6fxYtvfh8P2Kyfn2+//q9f6i0/ru9/7M5vyExvlHsPar1/q73vvG4/y43fvb7v2g0vouqvZyv/heuPcYpfWTzPlOsvfs9v56wvgAkvQyinLKAAAIHklEQVR4nO2di5KiOhCGh6QzIugooDgIOJ73f8kDOioqV+lON+58Vadqa08thp9c+pbk4+OPf4CV5xbslp/cDZHNapOnGVzQJjxGLnebZLIOMm2UcqooAzCPVtxNE4YXKLjXqSKYDmPu9gliG+oGpa4dzF/0edDmQN1UbtZJU6eqYCDonPDdUEc2GszH8gCdSp27F3y1Pmh30AosNZqJvH0A3veuZNf4nHUhlaMCiy2v4Hk2fmWZ9OxWv+hZ/XPi80jWSxuNfmaeWfiRWA+Squxc4fPM5fnGnP6n2ltocw07regXlmCwVoUgzn2XX0S3lZStYykHqL9TaoZrVQA3o34VHfTtIepI3OAGvPKbQ076G+FrWhUdaHv692s/KSz+yt8bJmcyODWC1GoJ+6+CT2pttn6oH40z4DLz4dIqsl+Yv9qvTrrUWLFqTtbWdjaXN/nt8fgEY7SqRXFFdNLrhyNSK3phHWxHs8VyKpYiiVoevlZsTuG6alZTqJVhawVMfk5BfjehaPRVBn3CMkyme8nhfq3R7d7+YHbYg/BRq9jm/PX44TWudZogawXH6tN/cmPTiFg+RQJQPZ/NsEBDJ9VIROkpGoXY2E7Wz29jQrzH487uCq4LUOkpFtaqbg56ERDVfHqV/SA9PUbtWJCcUz+f24unCN9IDe3HrHaxgjXO01E7limH4C4Obi61SnGa2Zeg3sVtilIOw8XsWCqfpYmueorKRsyyyrEhHgAYq8z+9WBDnVrqMfRgOyHb+D7KGT93ojs6d9id3EtaPv7oobhBjzbcNY8qSNJM0zAsMeG4fo47Ch+1YvCmGyb4MwpGtQjZIL3XCtkt60XePlTg0KvsoJYdoVjEKYMGoo55pSuPPuLRI8CxbAaz7Xyjtjx6K23T4UitmKJ/Xo+xoo8vhbyxAw639rBVcPWxhV4bi1RTFvBVU/b7/uAMTpQtaMR6TOlbpdV2qMqVDHSu+wzw4dQVi9ijv5k9UC5UL/qCPhLJ0I/FAAcOkgGDsXudHQ7QZc37EQ5qbdZ71aYQi73u+2vYSwEE/SqjKNxoYim6GTIOTyh96DMaCHqW1exEPelgS1sZE3Sa9TWpkLEIqE9+6a0UZHm7wUPgR2tLirTxYlrBQOa3GNOr9xTr9UyoAtjHTXkz/KCyBLFGubwKdHaM6xZI9PIZGWKtR3aCooOpdLZ9UGz4wtGF4ZHngfn49ypWSIDw+L3ZXWKr3/i2A6tIF9AiBCfJIDvsgzzy0XuW7aRqA3UlDyNQqlANP1CacMv0C8JAJEchlveMg1uJHtiuA2mGJlaHCtd+nRrG2g/0KJ9boxvDNwRaxnBkoatUqyukq8UeJ/3vUPGFhavFmAM7AwqSW86SIAaFCDBtXr1SuiQA+8toXGaC7S12P/occFAG5l/uKSO3J61AGwW7t3PdjVLopbN5MNvgBwuQYNuReeW+1IXGpUOC69SLGwRxFCoM+9kzFKlQItgth4+VbNOqin69YhMLbgkGwC0Vcf01JhICNLSV/YgYuzvAavmcyqTFP79/TCOgXKIlHGU6lXEoI1sxDbGEhEnx83sUGPubwOoYXM3Ggogp64Ny3wgiUnKGROX9qBierU01dOyjkwBY3+PbCLcU3Qiovb0gPsEqKBktOvJ+AmQYDr/g1zSiIqCou8LzaUeS4DobuImt5GlL1igs+BKslozK2yq52JHInwR7xpeqliCL9MZM6EiUEcp6ZCNSLfYitgZ2jsAIBAiJzjwzFzdxSTOyqsQ9Lsaxiv1DxQaw2A+48cUCUsJ+DZRXAHFLdEWc9f6EOxcjF3u9Xw9+ckfE5DXucDh7uEHG378EhUi7WOTMWr1+MBw5rh+7v9ejLpZu7M8fz1G1jrx4ww1dbkTVYIr/CtilktyxBOZbuQVpA/0WhXEIXwoHHRBFjnAbayvJjxZvvJMdmDkcC7cujkRQcprrvscBiKkxNQLTFI+I2XMxCUfnS8Ycz74juh8j7rnEg393YT9EVAIC/7amfrj805Zw270K/mWXA5FvYlXgzuRPZhCeOLKqRXjzMAmcanFejvkajFUiwoMNdbBViUzAJ3zG46kS4bvPYxx7hs51f+vqlNg6tgvk5ZyC+AK+7Tyr2GKsPqyONuViPyNrLAvf2nE+GukyWFY2c22jTITrEjBsPjd7Rxc9jFIyELMDE4Gf7Wx/yIBqgYQJBN0H49FsIZueR9gDok0+8IZaLQ404QgQcIgRNhsiI8K8n1aLlCjK9YZjMKKytd5vHXQTquAp0+W9dCxTsnDNVANYTSwIvWkRR67h8UMolcqmHme4Y0e58clMKZvaSZxQhhu0jPPWUNgFhjKsrMQXjfbGyzPaGBYk7BfS4rAOHLJQzC9vMQQ/17MDfVzUOFO3GJbb732mwULEXU/JGYz2s2izdnee5+1cdxt/5cdDKZOdzIRxppWYcLPTDrAzpuhM9raAqQnOVmQxhA4gbL9TWSafAcOuXnAmVqh2ZZlalstMOttl9QiHYrKadCVDMdPbkkvpYFJltfXsbAxGA/4bSFWyPBL7NuB8T3wAVvn8pjsgROlwqitgI+tUE3QvZSCYol3VyeIrwdVLGT1/u051owxiIemlQB+iN5nUG/FmyfgIjQJI43dX6swi3qvXAzXF4Ev8aYUVxuJFeweGVvqV92+G/vbf6FIP/GzyudJ9JCvv3AQIj5Hk0wwtsHAjP03Oca8y7PWr3OlPJ4kKknkQrd8qWzqOhbeOozw4pukhPDFP90e/jLd6/+So++OPB/4H3J2EcICUoZUAAAAASUVORK5CYII=" width="50">
+</a>
+  <a href="https://www.facebook.com/IIITKotaOffice/"target="_blank">
+<img src="data:image/png;base64,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" width="50"></a>
+
+  <a href="https://www.instagram.com/iiitkotaoffice/?hl=en"target="_blank">
+<img src="data:image/jpeg;base64,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"width="50" height="30"></a>
+  
+  </div>
+</div>
+
+<div>
+<header>
+<h1 class="centre" style="color:blue;">
+INDAIN INSTITUTE OF INFORMATION TECHNLOGY,KOTA
+</h1>
+</header>
+
+<img src="https://iiitkota.ac.in/static/media/logo.b831a251.png" width="300" height="280" class="center">
+
+<p>Indian Institute of Information Technology, Kota (IIIT, Kota) is an institute of national importance. IIIT Kota is a joint venture of the Ministry of Education (MoE) Govt. of India and Govt. of Rajasthan with Industry Partners in Public-Private-Partnership (PPP) model. IIIT Kota was established in 2013. Currently, the institute is mentored by Malaviya National Institute of Technology Jaipur (MNIT Jaipur) and is situated at MNIT Jaipur. The main site of IIIT, Kota shall be constructed at Ranpur near Kota on 100.37 acres of land made available by the Govt. of Rajasthan.</p>
+
+<h2 class="center">2nd Floor, Prabha Bhawan, MNIT Campus,, JLN Marg, Jaipur, Rajasthan 302017</h2>
+
+<img src="https://images.unsplash.com/photo-1640948857759-851b919f5fdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHx8&w=1000&q=80"  width="300" height="280" class="center">
+<h1 background-color:black>About IIIT KOTA </h1>
+<a href="https://www.google.com/maps/place/Malaviya+National+Institute+of+Technology+Jaipur+(MNIT)/@26.8639724,75.8085889,17z/data=!3m1!4b1!4m5!3m4!1s0x396db66fe2879c7f:0xdfc843bf9b6f869a!8m2!3d26.8639724!4d75.8107776s"target="_blank"width="300" height="280" class="center">Vist IIIT kota</a>
+<p style="background-color:pink; color: brown;">Indian Institute of Information Technology Kota (IIIT, Kota) is one of the Indian Institutes of Information Technology proposed to be located at Ranpur near Kota, Rajasthan. IIIT Kota is a joint venture of the Ministry of Human Resource Development, Government of India with Industries in Public-Private Partnership model. First batch of IIIT Kota has graduated in the year 2017. IIITK offers technical courses for CSE and ECE branches, with creative project courses. Every year IIITK celebrates its Foundation Day in April. After the IIIT Act was passed in the Parliament in 2017, IIITK has become an "Institute of National Importance", equalling in status with the NITs and IITs, with power of offering degrees officially.
+</p>
+<h2>Latest events</h2>
+<p >
+<ul style="background-color:powderblue;">
+<li>Short TOURATHON Event</li>
+<li>Atal sponsored FDP on “Explainable AI .....” on Date December 20-24,2021</li>
+<li>IIIT Kota organized its first convocation</li>
+<li>First International conference on Intelligent Cyber Physical systems ICPS-2021</li>
+<li>Training Programme on IoT in Agriculture Domain</li>
+<li>AICTE Training and Learning Academy (ATAL) Programme</li>
+<li>TEQIP-III sponsored 5-day workshop on ‘Mental health and emotional wellbeing’ under the MANODARPAN umbrella was organized in online mode from September 14-18, 2020 for students and faculty members.</li>
+
+</ul>
+</p>
+<h2>Placement</h2>.
+<div style="background-image: url('logo.gif'); background-repeat: no-repeat;background-position: center;">
+<h3>placement statistics 2021-2022</h3>
+
+<table style="width:80%">
+  <tr>
+    <th>BRANCH</th>
+    <th>MAXIMUM PACKAGE</th>
+    <th>AVERAGE PACKAGE</th>
+<th>PLACEMENT%</th>
+  </tr>
+  <tr>
+    <td>CSE</td>
+    <td>82 LPA</td>
+    <td>15.6 LPA</td>
+    <td>94.85%</td>
+  </tr>
+  <tr>
+    <td>ECE</td>	
+    <td>63 LPA</td>       
+    <td>12.9 LPA</td>
+    <td>80.95%</td>
+  </tr>
+<tr>
+    <td>Total</td>
+    <td>82 LPA</td>       
+    <td>14.9 LPA</td>
+    <td>90.65%</td>
+  </tr>
+</table>
+
+<h3>placement statistics 2020-2021</h3>
+
+<table style="width:80%">
+  <tr>
+    <th>BRANCH</th>
+    <th>MAXIMUM PACKAGE</th>
+    <th>AVERAGE PACKAGE</th>
+<th>PLACEMENT%</th>
+  </tr>
+  <tr>
+    <td>CSE</td>
+    <td>43 LPA</td>
+    <td>10.6 LPA</td>
+    <td>95.65%</td>
+  </tr>
+  <tr>
+    <td>ECE</td>	
+    <td>15.5 LPA</td>       
+    <td>7.4 LPA</td>
+    <td>93.75%</td>
+  </tr>
+<tr>
+    <td>Total</td>
+    <td>43 LPA</td>       
+    <td>9 LPA</td>
+    <td>94.87%</td>
+  </tr>
+</table>
+<h3>placement statistics 2019-2020</h3>
+
+<table class="centre" style="width:80%">
+  <tr>
+    <th>BRANCH</th>
+    <th>MAXIMUM PACKAGE</th>
+    <th>AVERAGE PACKAGE</th>
+<th>PLACEMENT%</th>
+  </tr>
+  <tr>
+    <td>CSE</td>
+    <td>29 LPA</td>
+    <td>11.7 LPA</td>
+    <td>95%</td>
+  </tr>
+  <tr>
+    <td>ECE</td>	
+    <td>29 LPA</td>       
+    <td>8.9 LPA</td>
+    <td>86.11%</td>
+  </tr>
+<tr>
+    <td>Total</td>
+    <td>29 LPA</td>       
+    <td>10.4 LPA</td>
+    <td>90.79</td>
+  </tr>
+</table>
+</div>
+<a href="https://iiitkota.ac.in/events"target="_blank">Events IIIT kota</a>
+<a href="<a href="https://iiitkota.ac.in/events"target="_blank">Fees structure</a>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> &#10166; Top</button>
+
+<script>
+    var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+<h1 style="text-align:Center ;">Life At IIIT,KOTA</h1>
+<div style="text-align:Center ;background-image: url('tro.gif'); mask-repeat: no-repeat;">
+<H2 style="text-align:Center ;">Achievements</H2>
+<br>
+<br>
+<h3 style="text-align:Center ;">Quizathone 2021 Winners</h3>
+<img src="quiz.jpg" width="500px">
+
+<br>
+<br>
+<h3>Grabbed the offer for "SWE Internship at Google". </h3>
+<h4>Prefinal year student Omkar Deshmukh (2019KUCP1009) cracked the offer from Google India for the two months Software Engineering Internship for Summer 2022.</h4>
+  
+<br>
+<br>
+<h3 style="text-align:Center;"> Fossasia Codeheat Winner </h3>
+<img src="code.jpg" width="500px">
+<pre >Pavnesh Chaturvedi - Grand Prize Winner
+Context: Fossasia is the largest open-source organization in Asia. Prize awarded for the most quality contributions on eventyay and PSLab project.
+Websites: fossasia.org, codeheat.org</pre>
+
+<h3>
+  AIR - 46 in the GATE 2021</h3>
+<h4>Yashash Jain (ECE) has achieved AIR - 46 in the GATE 2021</h4>
+
+<h3>AIR - 33 in the GATE 2020</h3>
+<h4>Piyush Kanda (CSE) has achieved AIR - 33 in the GATE 2020</h4>
+
+<h3>IIIT Kota at MST (MNIT Sports Tournament)</h3>
+<h3>🥈 Silver medal</h3>
+<h4>1.Chess (Girls Team)</h4>
+<h4>2.Chess (Boys Team)</h4>
+<h3>🥉 Bronze medal</h3> 
+<h4>1.Chess (Girls Team)</h4>
+<h4>2.Chess (Boys Team)</h4>
+
+<h3>IIIT Kota at Google DSC</h3>
+<h4>1.Sahil Ayank (DSC Lead)<br>
+2.Gaurav Khandelwal (DSC Member)<br>
+3.Vipasha Chandwani (DSC Member)<br>
+4.Tanuj Mehta (DSC Member)<br>
+5.Shashwat Singh (DSC Member)</h4>
+
+<h3>IIIT Kota at Gusto-2017, IIITDM Jabalpur</h2>
+<h3>🥈 Silver medal</h3>
+<h4>
+1.100 m race (Navneet Poonia)<br>
+2.200 m race (Navneet Poonia)<br>
+3.400 m race (Rahul Tyagi)<br>
+4.800 m race (Mohit Choudhary)<br>
+5.Carrom (Anjali Garg)
+</h4>
+<h3>🥉 Bronze medal</h3>
+<h4>1.100 m race (Deepak Yadav)<br>
+2.800 m race (Jaipal Singh)
+</h4>
+
+<h3>IIIT Kota stands 3rd overall at Inter IIIT Sports Meet – 2016</h3>
+<h3>🥇 Gold medal</h3>
+1.Long jump (Navneet Poonia)
+
+<h3>🥈 Silver medal</h3>
+<h4>1.4*400 (boys team)<br>
+2.Shotput (Srikant Deshmane)
+
+3.Chess (Nidhi Mantri)
+</h4>
+<h3>🥉 Bronze medal</h3>
+<h4>1.Cricket (boys team)<br>
+2.Long jump (Parth Kumar)<br>
+3.Badminton doubles (girls team)
+</h4>
+
+  </div>
+<div style="margin: 10px;">
+  <h1>Clubs and Forums</h1>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="algo.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>ALGORITHMUS</h1> 
+      <p>About Coding</p> 
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="arc.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>ARC ROBOTICS</h1> 
+      <p>about Robots</p> 
+    </div>
+  </div>
+</div>
+
+<div>
+  
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="art.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>ARTIVE CLUB</h1> 
+      <p>creativity</p> 
+      
+    </div>
+  </div>
+</div>
+
+<div>
+  
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>CAPTURE CLUB</h1> 
+      <p>Photography</p> 
+    </div>
+  </div>
+</div>
+
+<div>
+  
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="base.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>IIIT KOTA CODEBASE</h1> 
+      <p>Coding society</p> 
+    </div>
+  </div>
+</div>
+
+
+<div>
+  
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="dev.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>DEVELOPER STUDENT CLUBS</h1> 
+      <p>GDSE</p> 
+    </div>
+  </div>
+</div>
+
+<div>
+  
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="ebsb.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>EBSB CLUB</h1> 
+      <p>एक भारत श्रेष्ठ भारत</p> 
+      
+    </div>
+  </div>
+</div>
+
+<div>
+  
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="fit.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>FIT INDIA CLUB</h1> 
+      <p>Health</p> 
+    </div>
+  </div>
+</div>
+
+<div>
+  
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="inco.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>INCOGNITO CLUB</h1> 
+      <p>Music,Dancing and Singing</p> 
+  
+    </div>
+  </div>
+</div>
+
+<div>
+  
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="ody.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>ODYSSEY CLUB</h1> 
+      <p>The cultural club of iiit kota</p> 
+    </div>
+  </div>
+</div>
+
+<div>
+  
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="qns.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Q'N'S INSTITUTE MAGAZINE</h1> 
+      <p>Magazine club</p> 
+    </div>
+  </div>
+</div>
+
+<div>
+  
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="neon.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>NEON</h1> 
+      <p>Cinematic videomaker</p> 
+    </div>
+  </div>
+</div>
+  </div>
+  </div>
+  <br>
+  <br>
+
+  
+  <marquee>
+    <img src="r1.jpg" width="300px" style="margin: 10px;">
+    <img src="r2.jpg" width="300px" style="margin: 10px;">
+    <img src="r3.jpg" width="300px" style="margin: 10px;">
+    <img src="r4.jpg" width="300px" style="margin: 10px;" >
+    <img src="kota.jpg" width="300px" style="margin: 10px;">
+    
+    </marquee>
+    <h1 style="text-align: centre;">MNIT CAMPUS</h2>
+    <h2 style="background-color: blue; text-align: center;">&#169; 2022 IIIT KOTA</h2>
+  </body>
+</html>
